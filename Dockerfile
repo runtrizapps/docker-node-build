@@ -20,4 +20,4 @@ ENV PATH $VOLTA_HOME/bin:$PATH
 # install volta
 RUN curl https://get.volta.sh | bash
 
-RUN echo "tslint typescript prettier jest create-ts-index standard-version eslint lerna code-push-cli appcenter-cli ts-node detox react-native-cli codecov bugsnag-sourcemaps patch-package jetifier" | xargs -n 1 $VOLTA_HOME/bin/volta install
+RUN echo "tslint typescript prettier jest create-ts-index standard-version eslint lerna code-push-cli appcenter-cli ts-node detox react-native-cli codecov bugsnag-sourcemaps patch-package jetifier bin-version-check-cli" | xargs -n 1 $VOLTA_HOME/bin/volta install
